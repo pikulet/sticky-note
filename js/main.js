@@ -24,6 +24,7 @@ function addNote() {
     var emptyNote = createNote(100, 100, "");
     $('#board').append(emptyNote);
     $(".note").draggable(draggableNote);
+    $('span.delete').click(deleteNote);
 }
 
 function deleteNote() {
