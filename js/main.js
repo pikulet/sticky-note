@@ -69,9 +69,9 @@ function saveNotesToStorage() {
                 top     :   parseInt($(this).position().top),
                 left    :   parseInt($(this).position().left),
                 text    :    $(this).children('.editable').text(),
-                id      :   window.localStorage.length
         }
 
-        window.localStorage.setItem(noteObject.id, JSON.stringify(noteObject));
+        var noteId = window.localStorage.length;
+        window.localStorage.setItem(noteId, JSON.stringify(noteObject));
     });
 }
