@@ -7,11 +7,6 @@ draggableNote = {
 $(document).ready(function () {
  
     addNotesFromStorage();
-
-    $(".note").draggable(draggableNote);
- 
-    //Remove Note
-    $('span.delete').click(deleteNote);
  
     //Create Note
     $('#btn-addNote').click(addNote);
@@ -47,6 +42,7 @@ function createNote(left, top, text) {
         +   '</div>'
         +   '<div contenteditable="true" class="editable">'
         +   text
+        +   '</div>'
         +   '</div>';
     return note;
 }
