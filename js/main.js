@@ -57,6 +57,9 @@ function addNotesFromStorage() {
             $('#board').append(note);
         }
     }
+
+    $(".note").draggable(draggableNote);
+    $('span.delete').click(deleteNote);
 }
 
 function saveNotesToStorage() {
