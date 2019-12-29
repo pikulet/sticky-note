@@ -50,9 +50,10 @@ function createNote(left, top, text) {
 function addNotesFromStorage() {
     numNotes = window.localStorage.length;
     if (numNotes > 0) {
+        // load notes
         for (var i = 0; i < numNotes; i++) {
-            var id = window.localStorage.key(i);
-            noteObject = JSON.parse(window.localStorage.getItem(id));
+            noteObject = JSON.parse(
+                window.localStorage.getItem(i.toString()));
             note = createNote(noteObject.left, noteObject.top, noteObject.text);
             $('#board').append(note);
         }
