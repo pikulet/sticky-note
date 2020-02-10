@@ -1,7 +1,7 @@
 # sticky-note
 A sticky note application on the web
 
-Deployed with surge: [pin.surge.sh](pin.surge.sh)
+Deployed with surge: [pin.surge.sh](https://pin.surge.sh)
 
 ![example](example.png)
 
